@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+   <link rel="stylesheet" href="./css/inputs.css">
+   <script src="./js/bloquear.js"></script>
+   <title>Formularios</title>
+</head>
+
+<body>
+   <h1>Campos de formulario en HTML</h1>
+   <table width="100%">
+      <colgroup>
+         <col class="col1">
+         <col class="col2">
+      </colgroup>
+      <tr>
+         <th colspan="2">
+            <h2>Etiquetas para textos y números</h2>
+         </th>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="texto">Escribe texto: <sup>01</sup> </label>
+               <input id="texto" type="text" placeholder="escribe aquí un texto" required>               
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod01')"></button>            
+<pre id="cod01" class="blanco">&lt;p>
+   &lt;label for="texto">Escribe texto: &lt;/label>
+   &lt;input id="texto" type="text" placeholder="escribe aquí un texto" required>
+&lt;/p></pre>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="numero">Escribe numero: <sup>02</sup> </label>
+               <input id="numero" type="number" value="2" min="0" max="5">
+                 
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod02')"></button>
+<pre id="cod02" class="blanco">&lt;p>
+   &lt;label for="numero">Escribe numero: &lt;/label>
+   &lt;input id="numero" type="number" value="2" min="0" max="5">
+&lt;/p></pre>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="password">Escribe contraseña: <sup>03</sup> </label>
+               <input id="password" type="password" value="pwd">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod03')"></button>            
+<pre id="cod03" class="blanco">&lt;p>
+   &lt;label for="password">Escribe contraseña: &lt;/label>
+   &lt;input id="password" type="password" value="pwd">
+&lt;/p></pre>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="mail">Escribe e-mail: <sup>04</sup> </label>
+               <input id="mail" type="email" value="cursosonline@e-gri.com">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod04')"></button>            
+<pre id="cod04" class="blanco">&lt;p>
+   &lt;label for="mail">Escribe e-mail: &lt;/label>
+   &lt;input id="mail" type="email" value="cursosonline@e-gri.com">
+&lt;/p></pre>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="rango">Selecciona: <sup>05</sup> </label>
+               <input id="rango" type="range" min="10" max="50" step="10" list="marcas" value="30">
+               <datalist id="marcas">
+                  <option value="10">
+                  <option value="20">
+                  <option value="30">
+                  <option value="40">
+                  <option value="50">
+               </datalist>
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod05')"></button>            
+<pre id="cod05" class="blanco">&lt;p>
+   &lt;label for="rango">Selecciona: &lt;/label>
+   &lt;input id="rango" type="range" min="10" max="50" step="10" list="marcas" value="30">
+   &lt;datalist id="marcas">
+      &lt;option value="10">
+      &lt;option value="20">
+      &lt;option value="30">
+      &lt;option value="40">
+      &lt;option value="50">
+   &lt;/datalist>
+&lt;/p></pre>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="tlf">Escribe telefono: <sup>06</sup> </label>
+               <input id="tlf" type="tel" value="900869415">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod06')"></button>            
+<pre id="cod06" class="blanco">&lt;p>
+   &lt;label for="tlf">Escribe telefono: &lt;/label>
+   &lt;input id="tlf" type="tel" value="900869415">
+&lt;/p></pre>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="enlace">Escribe url: <sup>07</sup> </label>
+               <input id="enlace" type="url" value="https://cursos.e-gri.com/">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod07')"></button>            
+<pre id="cod07" class="blanco">&lt;p>
+   &lt;label for="enlace">Escribe url: &lt;/label>
+   &lt;input id="enlace" type="url" value="https://cursos.e-gri.com/">
+&lt;/p></pre>          
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="buscar">Texto a buscar: <sup>08</sup> </label>
+               <input id="buscar" type="search" value="GRI">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod08')"></button>            
+<pre id="cod08" class="blanco">&lt;p>
+   &lt;label label for="buscar">Texto a buscar: &lt;/label>
+   &lt;input id="buscar" type="search" value="GRI">
+&lt;/p></pre>           
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="archivo">Selecciona archivo: <sup>09</sup> </label>
+               <input id="archivo" type="file">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod09')"></button>            
+<pre id="cod09" class="blanco">&lt;p>
+   &lt;label label for="archivo">Selecciona archivo: &lt;/label>
+   &lt;input id="archivo" type="file">
+&lt;/p></pre>
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="color">Selecciona color: <sup>10</sup> </label>
+               <input id="color" type="color" value="#36a8bf">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod10')"></button>            
+<pre id="cod10" class="blanco">&lt;p>
+   &lt;label label for="color">Selecciona color: &lt;/label>
+   &lt;input id="color" type="color" value="#36a8bf">
+&lt;/p></pre>         
+         </td>
+      </tr>
+      <tr>
+         <th colspan="2">
+            <h2>Seleccion de opciones</h2>
+         </th>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="opciones">Selecciona la opción: <sup>11</sup> </label>
+               <input title="opcion1" name="opciones" value="1" id="opcion1" type="radio"> Opcion 1
+               <input title="opcion2" name="opciones" value="2" id="opcion2" type="radio"> Opcion 2
+               <input title="opcion3" name="opciones" value="3" id="opcion3" type="radio" checked> Opcion 3
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod11')"></button>            
+<pre id="cod11" class="blanco">&lt;p>
+   &lt;label for="opciones">Selecciona la opción: &lt;/label>
+   &lt;input title="opcion1" name="opciones" value="1" id="opcion1" type="radio"> Opcion 1
+   &lt;input title="opcion2" name="opciones" value="2" id="opcion2" type="radio"> Opcion 2
+   &lt;input title="opcion3" name="opciones" value="3" id="opcion3" type="radio" checked> Opcion 3
+&lt;/p></pre>               
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="checa">Verifica: <sup>12</sup> </label>
+               <input id="checa" type="checkbox" checked>
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod12')"></button>            
+<pre id="cod12" class="blanco">&lt;p>
+   &lt;label for="checa">Verifica: &lt;/label>
+   &lt;input id="checa" type="checkbox" checked>
+&lt;/p></pre>              
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="seleccion">Selecciona (<b>select</b>): <sup>13</sup> </label>
+               <select id="seleccion">
+                  <optgroup label="FrontEnd">
+                     <option value="1">HTML</option>
+                     <option value="2">CSS</option>
+                     <option value="3" selected>JavaScript</option>
+                  </optgroup>
+                  <optgroup label="BackEnd">
+                     <option value="4">Java</option>
+                     <option value="5">Python</option>
+                     <option value="6">PHP</option>
+                  </optgroup>
+                  <optgroup label="Bases de Datos" disabled>
+                     <option>MySQL</option>
+                     <option>Mongo DB</option>
+                     <option>PostGresql</option>
+                  </optgroup>
+               </select>
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod13')"></button>            
+<pre id="cod13" class="blanco">&lt;p>
+   &lt;label for="seleccion">Selecciona (&lt;b>select&lt;/b>): &lt;/label>
+   &lt;select id="seleccion">
+      &lt;optgroup label="FrontEnd">
+         &lt;option value="1">HTML&lt;/option>
+         &lt;option value="2">CSS&lt;/option>
+         &lt;option value="3" selected>JavaScript&lt;/option>
+      &lt;/optgroup>
+      &lt;optgroup label="BackEnd">
+         &lt;option value="4">Java&lt;/option>
+         &lt;option value="5">Python&lt;/option>
+         &lt;option value="6">PHP&lt;/option>
+      &lt;/optgroup>
+      &lt;optgroup label="Bases de Datos" disabled>
+         &lt;option>MySQL&lt;/option>
+         &lt;option>Mongo DB&lt;/option>
+         &lt;option>PostGresql&lt;/option>
+      &lt;/optgroup>
+   &lt;/select>
+&lt;/p></pre>              
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="DataList">Selecciona (<b>datalist</b>): <sup>14</sup> </label>
+               <input id="DataList" type="text" list="dataListClientes">
+               <datalist id="dataListClientes">
+                  <option data-posicion="0" value="MySQL">
+                  <option data-posicion="1" value="Mongo DB">
+                  <option data-posicion="2" value="PostGresql">
+               </datalist>
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod14')"></button>            
+<pre id="cod14" class="blanco">&lt;p>
+   &lt;label for="DataList">Selecciona (&lt;b>datalist&lt;/b>): &lt;/label>
+   &lt;input id="DataList" type="text" list="dataListClientes">
+   &lt;datalist id="dataListClientes">
+      &lt;option data-posicion="0" value="MySQL">
+      &lt;option data-posicion="1" value="Mongo DB">
+      &lt;option data-posicion="2" value="PostGresql">
+   &lt;/datalist>
+&lt;/p></pre>              
+         </td>
+      </tr>
+      <tr>
+         <td colspan="2">
+         <br>
+         <p class="amarillo">La diferencia entre <b>select</b> y <b>datalist</b> es que este último sólo sugiere los valores</p>
+         </td>
+      </tr>
+      <tr>
+         <th colspan="2"><h2>Etiquetas para tiempo</h2></th>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="fecha">Selecciona fecha: <sup>15</sup> </label>
+               <input id="fecha" type="date" value="2022-05-10">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod15')"></button>            
+<pre id="cod15" class="blanco">&lt;p>
+   &lt;label for="fecha">Selecciona fecha: &lt;/label>
+   &lt;input id="fecha" type="date" value="2022-05-10">
+&lt;/p></pre>              
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="fechaLocal">Selecciona fecha y hora: <sup>16</sup> </label>
+               <input id="fechaLocal" type="datetime-local" value="2022-05-26T19:30">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod16')"></button>            
+<pre id="cod16" class="blanco">&lt;p>
+   &lt;label for="fechaLocal">Selecciona fecha y hora: &lt;/label>
+   &lt;input id="fechaLocal" type="datetime-local" value="2022-05-26T19:30">
+&lt;/p></pre>              
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="hora">Selecciona hora: <sup>17</sup> </label>
+               <input id="hora" type="time" value="19:30">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod17')"></button>            
+<pre id="cod17" class="blanco">&lt;p>
+   &lt;label for="hora">Selecciona hora: &lt;/label>
+   &lt;input id="hora" type="time" value="19:30">
+&lt;/p></pre>              
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="mes">Selecciona mes: <sup>18*</sup> </label>
+               <input id="mes" type="month" value="2022-05">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod18')"></button>            
+<pre id="cod18" class="blanco">&lt;p>
+   &lt;p><label for="mes">Selecciona mes: &lt;/label>
+   &lt;input id="mes" type="month" value="2022-05">
+&lt;/p></pre>              
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="semana">Selecciona semana: <sup>19*</sup> </label>
+               <input id="semana" type="week" value="2022-W05">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod19')"></button>            
+<pre id="cod19" class="blanco">&lt;p>
+   &lt;label for="semana">Selecciona semana: &lt;/label>
+   &lt;input id="semana" type="week" value="2022-W05">
+&lt;/p></pre>            
+         </td>
+      </tr>
+      <tr>
+         <th colspan="2">
+            <h2>Textarea</h2>
+         </th>
+      </tr>      
+      <tr>
+         <td>
+            <table>
+               <tr>
+                  <td><p><label for="textArea">Escribe algo: <sup>20</sup> </label></p></td>
+                  <td><textarea id="textArea" rows="3" cols="50">contenido</textarea></td>
+               </tr>
+            </table>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod20')"></button>            
+<pre id="cod20" class="blanco">&lt;p>
+   &lt;label for="textArea">Escribe algo: &lt;/label>
+   &lt;textarea id="textArea" rows="3" cols="50">contenido&lt;/textarea>
+&lt;/p></pre>
+         </td>
+      </tr>
+      <tr>
+         <th colspan="2">
+            <h2>Botones</h2>
+         </th>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="boton1">Botón sólo de texto <sup>21</sup> </label>
+               <input id="boton1" type="button" value="Haz clic" onclick="alert('Hola gente!')">
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod21')"></button>            
+<pre id="cod21" class="blanco">&lt;p>
+   &lt;label for="boton1">Botón sólo de texto &lt;/label>
+   &lt;input id="boton1" type="button" value="Haz clic" onclick="alert('Hola gente!')">
+&lt;/p></pre> 
+         </td>
+      </tr>
+      <tr>
+         <td>
+            <p><label for="boton2">Con capacidades gráficas <sup>22</sup> </label>
+               <button id="boton2" type="button" onclick="alert('Los saluda: Rita de la Torre')">
+                  <img src="./img/ok.png" alt="Ok image" />
+               </button>
+            </p>
+         </td>
+         <td>
+<button class="nb"><img src="./img/copy.svg" alt="copiar" onclick="copiar('cod22')"></button>            
+<pre id="cod22" class="blanco">&lt;p>
+   &lt;label for="boton2">Con capacidades gráficas: &lt;/label>
+   &lt;button id="boton2" type="button" onclick="alert('Los saluda: Rita de la Torre')">
+      &lt;img src="./img/ok.png" alt="Ok image" />
+   &lt;/button>
+&lt;/p></pre>             
+         </td>
+      </tr>
+   </table>
+   <hr>
+   <h3>Ver todos lo referente a formularios y sus atributos así como los atributos de los campos de formulario <a
+         href="https://www.w3schools.com/html/html_forms.asp" target="_blank" rel="noopener"><button>aquí</button></a>
+   </h3>
+
+   <div id="mensaje">
+      ¡Código HTML en el portapapeles!<br><code>Ctrl-V</code> para pegar el código en tu archivo.
+    </div>
+    
+
+   <script src="./js/clip.js"></script>
+</body>
+
+</html>

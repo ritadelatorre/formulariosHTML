@@ -1,0 +1,136 @@
+body {
+  font-family: Nunito, 'Open Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: whitesmoke;
+  width: 96%;
+  margin: 0 auto;
+  /*background-color: #fbf9ea;*/
+  -webkit-user-select: none;
+  /* Compatibilidad con WebKit */
+  user-select: none;
+  /* Para navegadores modernos */
+}
+
+label {
+  display: inline-block;
+  width: 14em;
+  text-align: right;
+  font-size: 95%;
+}
+
+sup {
+  color: deepskyblue;
+  font-size: 75%;
+  vertical-align: 0.7em;
+}
+
+fieldset {
+  display: inline-block;
+}
+
+input,
+textarea,
+select {
+  font-family: 'Open Sans', Tahoma, 'Segoe UI', sans-serif;
+  color: darkred;
+  width: 25em;
+}
+
+input[type=radio],
+input[type=checkbox],
+input[type=color] {
+  width: 2em;
+}
+
+input[type=button] {
+  width: 5em;
+}
+.nb {
+  border: 0px;
+  background-color: transparent;
+}
+p {
+  margin: 2px 0px;
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: steelblue;
+}
+
+h2 {
+  font-size: 1.2em;
+  background-color: steelblue;
+  color: white;
+  margin: 5px 0px;
+}
+
+.amarillo {
+  text-align: center;
+  background-color: yellow;
+  padding: 5px 0px;
+}
+
+details,
+summary {
+  border-color: gray 1 solid;
+  background-color: white;
+  font-weight: 300;
+  font-size: 0.85em;
+}
+
+span {
+  display: inline-block;
+  width: 35em;
+}
+
+summary {
+  color: darkblue;
+  background-color: gainsboro;
+}
+
+table,
+td {
+  vertical-align: top;
+  text-align: left;
+}
+
+textarea {
+  margin-top: 0;
+  display: inline-block;
+}
+
+col1 {
+  vertical-align: top;
+}
+
+col2 {
+  width: 35%;
+  text-align: left;
+  background-color: white;         
+}
+
+pre {
+  display: block;
+}
+.blanco {
+  display: none;
+  background-color: white;
+  font-size: 60%;
+}
+
+#mensaje {
+  display: none; /* Inicialmente oculto */
+  position: fixed; /* Fijado en la ventana para que no dependa del flujo de la página */
+  top: 20px; /* Ubicación desde la parte superior */
+  left: 50%; /* Centrado horizontalmente */
+  transform: translateX(-50%); /* Ajusta el centro */
+  background: darkblue; /* Fondo agradable */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid lightsteelblue; /* Borde para estilo */
+  color: whitesmoke; /* Texto contrastante */
+  border-radius: 5px; /* Bordes redondeados */
+  z-index: 9999; /* Se asegura de estar en el frente */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Agrega sombra para un efecto más bonito */
+  font-size: 0.8em;
+}

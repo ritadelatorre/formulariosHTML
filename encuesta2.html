@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encuesta</title>
+  <link rel="stylesheet" href="./css/estilos.css">
+  <link rel="shortcut icon" href="./img/favicon.png">
+  <script src="./js/bloquear.js"></script>
+</head>
+<body>
+  <h1>Encuesta sobre ropa deportiva</h1>
+  <form action="">
+    <p><label for="fav">¿Cuál es tu marca de ropa deportiva favorita?</label><br>
+    <input id="fav" type="text" required></p>
+
+    <p><label for="cantidad">¿Cuántos productos por año compras de esta marca?</label><br>   
+      <input type="radio" name="cantidad" id="cantidad"> Entre uno y cinco<br>
+      <input type="radio" name="cantidad" id="cantidad"> Entre seis y diez<br>
+      <input type="radio" name="cantidad" id="cantidad"> Entre once y quince<br>
+      <input type="radio" name="cantidad" id="cantidad"> Más de quince<br>
+    </p>
+
+    <p><label for="calidad">¿Cómo puntuarías la calidad de los productos de esa marca?</label><br>    
+      <input type="radio" name="calidad" id="calidad"> Excelente&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Muy buena&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Buena&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Regular&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Mala&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Muy mala&nbsp;&nbsp;
+    </p>
+
+    <p><label for="calidad">¿Cómo describirías la relación precio-calidad de esa marca??</label><br>    
+      <input type="radio" name="calidad" id="calidad"> Excelente&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Muy buena&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Buena&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Regular&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Mala&nbsp;&nbsp;
+      <input type="radio" name="calidad" id="calidad"> Muy mala&nbsp;&nbsp;
+    </p>
+
+    <p><label for="tiempo">¿Cada cuánto tiempo cambias tus zapatillas deportivas?</label><br>    
+      <input type="radio" name="tiempo" id="tiempo"> 6 meses&nbsp;&nbsp;
+      <input type="radio" name="tiempo" id="tiempo"> 12 meses&nbsp;&nbsp;
+      <input type="radio" name="tiempo" id="tiempo"> 18 meses&nbsp;&nbsp;
+      <input type="radio" name="tiempo" id="tiempo"> 3 años&nbsp;&nbsp;
+      <input type="radio" name="tiempo" id="tiempo"> 4 años&nbsp;&nbsp;
+      <input type="radio" name="tiempo" id="tiempo"> 5 años o más&nbsp;&nbsp;
+    </p>
+    
+    <p><b>¿Qué tipo de prendas deportivas compras con más frecuencia?</b><br>
+    <input type="checkbox" id="p1" name="p1" value="1"><label class="il" for="p1"> Zapatos</label>
+    <input type="checkbox" id="p2" name="p2" value="2"><label class="il"for="p2"> Sudaderas</label>
+    <input type="checkbox" id="p3" name="p3" value="3"><label class="il"for="p3"> Chandals</label>
+    <input type="checkbox" id="p4" name="p4" value="4"><label class="il"for="p4"> Pantalones</label>
+    <input type="checkbox" id="p5" name="p5" value="5"><label class="il"for="p5"> Shorts</label>
+    <input type="checkbox" id="p6" name="p6" value="6"><label class="il"for="p6"> Ropa interior</label>
+    <input type="checkbox" id="p7" name="p7" value="7"><label class="il"for="p7"> Trajes de baño</label>
+    <input type="checkbox" id="p8" name="p8" value="8"><label class="il"for="p8"> Otros</label></p>
+
+    <p><label for="gasto">¿Cuánto dinero gastas en prendas deportivas por año?</label><br>
+    <input type="number" name="gasto" id="gasto" min="0" max="20000"> euros.</p>
+
+    <p><label for="marcas">¿Tienes algunas otras marcas favoritas? ¿Cuáles?</label><br>
+    <textarea name="marcas" id="marcas" cols="80" rows="4"></textarea></p>
+      
+    <p><label for="porque">¿Por qué eliges una marca?</label><br>    
+      <select id="porque">
+        <option value="1">Por la estética de los productos </option><br>
+        <option value="2">Por la calidad de los productos  </option><br>
+        <option value="3">Por la comodidad que ofrecen los productos  </option><br>
+        <option value="4">Por el precio  </option><br>
+        <option value="5">Otras  </option><br>
+      </select>
+    </p>
+
+    <p><label for="publicidad">¿Crees que las mejores marcas son aquellas más conocidas o que tienen mayor publicidad?</label><br>    
+      <input type="radio" name="publicidad" id="publicidad"> Sí &nbsp;&nbsp;
+      <input type="radio" name="publicidad" id="publicidad"> No &nbsp;&nbsp;
+      <input type="radio" name="publicidad" id="publicidad"> No lo sé &nbsp;&nbsp;
+    </p>
+    <p><button type="submit"> Enviar </button></p>
+  </form>
+</body>
+</html>
